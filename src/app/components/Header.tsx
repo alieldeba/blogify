@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,12 +19,12 @@ export default function Home() {
           />
         </svg>
         <ul className="flex gap-5 uppercase">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Posts</li>
-          <li className="cursor-pointer">Authors</li>
-          <li className="cursor-pointer">Contact</li>
+          <Link href="/" className="cursor-pointer">Home</Link>
+          <Link href="/posts" className="cursor-pointer">Posts</Link>
+          <Link href="/authors" className="cursor-pointer">Authors</Link>
+          <Link href="/contact" className="cursor-pointer">Contact</Link>
         </ul>
-        <button className="flex items-center gap-2">
+        <Link href="/login" className="flex items-center gap-2 mr-5">
           {/* <span className="mr-12">|</span> */}
           LOGIN
           <svg
@@ -42,7 +43,7 @@ export default function Home() {
               stroke-linejoin="round"
             />
           </svg>
-        </button>
+        </Link>
       </div>
     </nav>
   );

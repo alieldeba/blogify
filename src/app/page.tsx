@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="h-[calc(100vh-51px)] container m-auto flex items-center justify-center">
-        <div className="flex flex-col gap-3 w-[300px]">
-          <h3 className="text-3xl">Best Place Where You Get Posts & Blogs</h3>
-          <p>
+      <div className="h-[calc(100vh-51px)] container m-auto flex items-center justify-between">
+        <div className="flex flex-col gap-5 w-[500px]">
+          <h3 className="text-6xl">Best Place Where You Get Posts & Blogs</h3>
+          <p className="text-slate-800 text-xl">
             Try searching for our best posts and authors, and if there are
             anything wrong just contact us.
           </p>
-          <button className="flex gap-2 items-center rounded-full bg-black px-5 text-white w-fit">
+          <button className="flex gap-2 items-center rounded-full bg-black px-5 text-white w-fit p-2">
             See Posts{" "}
             <svg
               width="15"
