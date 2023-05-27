@@ -1,0 +1,10 @@
+.links {
+  color: #282828;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 20px;
+}
+.logo {
+  cursor: pointer;
+}
